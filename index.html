@@ -66,7 +66,7 @@
         .about-content{padding-left:.5rem}
         .stat-card{background:var(--white);padding:1.25rem;border-radius:12px;box-shadow:var(--shadow);text-align:center;transition:all .3s ease;height:100%}
         .stat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}
-        .counter{font-size:2rem;font-weight:800;color:var(--pink)}
+        .counter,.counter-static{font-size:2rem;font-weight:800;color:var(--pink)}
         .step-card{background:var(--white);border-radius:15px;padding:1.5rem;box-shadow:var(--shadow);transition:all .4s ease;height:100%}
         .step-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}
         .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--pink),var(--hot-pink));color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.3rem;flex-shrink:0}
@@ -105,7 +105,6 @@
         @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
     </style>
 <base target="_blank">
-<base target="_blank">
 </head>
 <body>
 
@@ -130,7 +129,7 @@
     </div>
 </section>
 
-<!-- ABOUT / COACH - SHAHNAJ BANO PHOTO TOP -->
+<!-- ABOUT / COACH -->
 <section class="py-5 bg-white">
     <div class="container">
         <div class="row g-4 align-items-center">
@@ -138,25 +137,27 @@
                 <img src="https://i.ibb.co/5W7GfF31/Whats-App-Image-2026-05-13-at-1-04-55-PM.jpg" alt="Shahnaj Bano" class="about-img" loading="lazy">
             </div>
             <div class="col-lg-6 animate-stagger about-content" style="--order:2">
-                <div class="badge-custom mb-2">💫 Your Mentor</div>
-                <h2 class="display-5 fw-bold mb-3">Hi, I'm Shahnaj Bano 💖</h2>
-                <div class="mb-3">
-                    <p class="fs-5 d-flex align-items-center gap-3 mb-2">🏡 Housewife</p>
-                    <p class="fs-5 d-flex align-items-center gap-3 mb-2">💼 Digital Skills & Online Earning Mentor</p>
-                    <p class="fs-5 d-flex align-items-center gap-3">🚀 Helping Women Build Financial Freedom</p>
+                <div class="badge-custom mb-2">💫 About Me</div>
+                <h2 class="display-5 fw-bold mb-2">Assalamu Alaikum, I'm Shahnaj Bano 💖</h2>
+                <p class="fs-5 fw-semibold mb-3" style="color:var(--pink)">Business & Digital Coach</p>
+
+                <p class="fs-6 mb-2">Alhamdulillah, mujhe digital business field mein <strong>1+ year</strong> ka experience hai. Apni journey mein maine <strong>₹5.5 Lakh+</strong> ki earning achieve ki hai aur <strong>Six-Figure Earner</strong> bani hoon. ✨</p>
+                <p class="fs-6 mb-3">Alhamdulillah, ab tak main <strong>300+ students</strong> ko guide kar chuki hoon, jismein women aur students ko digital skills samajhne aur apni digital journey start karne mein guidance deti hoon.</p>
+
+                <div class="p-3 rounded-2 mb-3" style="background:linear-gradient(white,white) padding-box,linear-gradient(135deg,var(--pink),var(--hot-pink)) border-box;border:2px solid transparent">
+                    <h3 class="h5 fw-bold mb-2">🎯 My Mission: Learn, Grow & Guide</h3>
+                    <p class="fs-6 fw-semibold mb-0" style="color:var(--dark)">Main believe karti hoon ki right skills, proper guidance aur consistency ke saath har woman apne liye ek better digital future create kar sakti hai. 🌟</p>
                 </div>
-                <div class="p-3 rounded-2 mb-3" style="background:linear-gradient(135deg,var(--soft-pink),var(--white));border:2px solid transparent;background:linear-gradient(white,white) padding-box,linear-gradient(135deg,var(--pink),var(--hot-pink)) border-box">
-                    <h3 class="h5 fw-bold mb-2">🎯 My Mission:</h3>
-                    <p class="fs-5 fw-semibold mb-0" style="color:var(--dark)">"Every woman deserves to be financially independent & confident in her own skin" 🌟</p>
-                </div>
+
                 <div class="d-flex gap-3 flex-wrap mb-4">
                     <button class="wa-btn open-any" data-source="About Section"><i data-lucide="message-circle" width="18"></i>Connect on WhatsApp</button>
                     <a href="https://www.instagram.com/shahnaj0147" target="_blank" class="insta-btn"><i data-lucide="instagram" width="18"></i>Follow on Instagram</a>
                 </div>
+
                 <div class="row g-3">
-                    <div class="col-md-4"><div class="stat-card"><div class="counter" data-target="3" data-suffix="+">0</div><div class="text-muted small">Years Experience</div></div></div>
-                    <div class="col-md-4"><div class="stat-card"><div class="counter" data-target="1500" data-suffix="+">0</div><div class="text-muted small">Students Helped</div></div></div>
-                    <div class="col-md-4"><div class="stat-card"><div class="counter" data-target="50000" data-prefix="₹">0</div><div class="text-muted small">Monthly Earning</div></div></div>
+                    <div class="col-md-4"><div class="stat-card"><div class="counter" data-target="1" data-suffix="+">0</div><div class="text-muted small">Year Experience</div></div></div>
+                    <div class="col-md-4"><div class="stat-card"><div class="counter" data-target="300" data-suffix="+">0</div><div class="text-muted small">Students Guided</div></div></div>
+                    <div class="col-md-4"><div class="stat-card"><div class="counter-static">₹5.5L+</div><div class="text-muted small">Earning Achieved</div></div></div>
                 </div>
             </div>
         </div>
@@ -240,7 +241,7 @@
             <div class="col-lg-10">
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What kind of work will I be doing?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Digital Skills: Canva Design, Graphic Design, Meta Ads, Video Editing, Content Creation, Social Media Management, Affiliate Marketing, Freelancing, AI Tools, Website Design, Email Marketing, Lead Generation, Digital Marketing, Personal Branding & Online Business. 100% Legitimate.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is this program legitimate & safe?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Absolutely genuine. 1500+ students already earning. You can verify everything before joining.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is this program legitimate & safe?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Absolutely genuine. 300+ students already guided. You can verify everything before joining.</div></div></div>
                     <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How much time daily?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Just 1-2 hours daily. Flexible timing. Perfect for housewives, students, and working women.</div></div></div>
                     <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">When will I start earning?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Most students start earning within 2-4 weeks. Consistent income in 1-2 months.</div></div></div>
                     <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Any prior experience needed?</button></h2><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">No experience needed at all! Complete beginner-friendly training provided step-by-step. No degree required.</div></div></div>
@@ -253,7 +254,7 @@
     </div>
 </section>
 
-<!-- FEEDBACK / TESTIMONIALS - ALL IN ONE LINE -->
+<!-- FEEDBACK / TESTIMONIALS -->
 <section class="py-5 bg-white">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-2">Student Success Stories</h2>
@@ -277,7 +278,7 @@
 <section class="py-5 text-white" style="background:linear-gradient(135deg,var(--dark),var(--pink))">
     <div class="container text-center">
         <h2 class="display-4 fw-bold mb-3">Ready to Transform Your Life?</h2>
-        <p class="fs-5 mb-4">Join thousands of women on their journey to financial independence</p>
+        <p class="fs-5 mb-4">Join 300+ women on their journey to financial independence</p>
         <div class="card border-0 p-4 p-md-5 mb-4" style="background:var(--white);color:var(--dark)">
             <h3 class="h4 fw-bold mb-3">📲 How to Start?</h3>
             <p class="fs-5 mb-3">Send me a message on WhatsApp with:</p>
@@ -388,7 +389,7 @@ mainForm.addEventListener('submit',e=>{
     fd.append('timestamp',new Date().toISOString());
     fetch(SCRIPT_URL,{method:'POST',body:fd,mode:'no-cors'}).catch(()=>{});
 
-    // Meta Pixel - Only Contact track (leads cost kam)
+    // Meta Pixel - Only Contact track
     if(typeof fbq!=='undefined'){
         fbq('track','Contact');
     }
